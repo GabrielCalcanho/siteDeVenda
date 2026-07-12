@@ -3,490 +3,282 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Emagreça com Inteligência — Guia prático de hábitos alimentares</title>
-<meta name="description" content="Um guia digital para organizar sua alimentação e construir hábitos saudáveis e sustentáveis, sem dietas radicais.">
-
+<title>Do Aperto ao Controle — Guia Prático de Finanças Pessoais</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=IBM+Plex+Mono:wght@400;500;600&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<!-- ==========================
-     AVISO SUPERIOR
-=========================== -->
+<div class="spine" aria-hidden="true"></div>
+
 <div class="topbar">
-  <p>Acesso imediato após a confirmação do pagamento · <strong>R$ 29,90</strong></p>
+  <div class="topbar-in">
+    <div class="brand">Do Aperto <span>ao Controle</span></div>
+    <a href="https://pay.kiwify.com.br/eljR2EL" class="topbar-cta">Quero o ebook</a>
+  </div>
 </div>
 
-<!-- ==========================
-     CABEÇALHO
-=========================== -->
-<header class="site-header">
+<header class="hero">
   <div class="wrap">
-    <a class="brand" href="#topo">
-      <span class="brand-mark">EI</span>
-      Emagreça&nbsp;com&nbsp;Inteligência
-    </a>
-    <a href="#comprar" class="btn btn-cta btn-small">Quero o guia</a>
+    <div class="eyebrow mono">Educação financeira · guia prático</div>
+    <h1>Pare de perguntar <em>"pra onde foi meu dinheiro"</em> todo mês.</h1>
+    <p class="hero-sub">Um guia direto, sem fórmulas mágicas, para você diagnosticar seus gastos, montar um orçamento que funciona de verdade e sair das dívidas com um método que cabe na sua rotina.</p>
+    <div class="hero-actions">
+      <a href="https://pay.kiwify.com.br/eljR2EL" class="btn-primary">
+        Quero organizar minhas finanças
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <span class="hero-note mono">Ebook + Planner Financeiro Premium</span>
+    </div>
+
+    <div class="ledger-card reveal" id="ledgerCard">
+      <div class="ledger-head">
+        <span>Extrato · antes e depois do método</span>
+        <span>30 dias</span>
+      </div>
+      <svg class="ledger-chart" viewBox="0 0 640 150" preserveAspectRatio="none" id="ledgerSvg">
+        <line x1="0" y1="75" x2="640" y2="75" stroke="rgba(244,236,218,0.15)" stroke-width="1" stroke-dasharray="2 4"/>
+        <path id="pathBefore" d="M0,60 L45,95 L90,70 L135,120 L180,90 L220,138" fill="none" stroke="#b4442e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path id="pathAfter" d="M220,138 L280,110 L340,112 L400,80 L460,84 L520,50 L580,44 L640,18" fill="none" stroke="#2f8f5b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="220" cy="138" r="3.5" fill="#f4ecda"/>
+      </svg>
+      <div class="ledger-figures">
+        <div class="fig-before">
+          <div class="fig-label">Saldo em 01/mar</div>
+          <div class="fig-value mono">– R$ 847</div>
+        </div>
+        <div class="fig-after">
+          <div class="fig-label">Saldo em 30/mar</div>
+          <div class="fig-value mono">R$ 1.240</div>
+        </div>
+      </div>
+    </div>
   </div>
 </header>
 
-<main id="topo">
-
-  <!-- ==========================
-       HERO
-  =========================== -->
-  <section class="hero" aria-labelledby="hero-title">
-    <div class="wrap hero-grid">
-      <div class="hero-copy">
-        <p class="eyebrow">Guia digital · hábitos alimentares</p>
-        <h1 id="hero-title">Organize sua alimentação sem dietas radicais.</h1>
-        <p class="hero-lead">
-          Um passo a passo simples para entender o que realmente leva ao emagrecimento
-          e transformar isso em uma rotina que você consegue manter.
-        </p>
-
-        <div class="hero-actions">
-          <a href="#comprar" class="btn btn-cta btn-large">Quero meu guia agora</a>
-          <a href="#conteudo" class="btn btn-ghost btn-large">Ver o conteúdo</a>
-        </div>
-
-        <ul class="hero-micro">
-          <li>Acesso imediato</li>
-          <li>Formato digital (PDF)</li>
-          <li>Celular, tablet ou computador</li>
-        </ul>
-      </div>
-
-      <div class="hero-visual">
-        <img src="assets/images/Leveza Clínica.png" alt="Capa do e-book Emagreça com Inteligência" class="hero-cover">
-        <div class="hero-stat-card">
-          <span class="hero-stat-number">30</span>
-          <span class="hero-stat-label">dias de plano guiado</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==========================
-       O PROBLEMA
-  =========================== -->
-  <section class="section" id="problema" aria-labelledby="problema-title">
-    <div class="wrap section-head">
-      <p class="eyebrow">O problema</p>
-      <h2 id="problema-title">A maioria das dietas não falha por falta de força de vontade</h2>
-      <p class="section-lead">Elas falham porque são difíceis demais de sustentar no dia a dia. Este guia existe para resolver isso.</p>
-    </div>
-
-    <div class="wrap grid-4 reveal-group">
-      <article class="card-flat reveal">
-        <span class="card-icon" aria-hidden="true">✕</span>
-        <h3>Dietas restritivas</h3>
-        <p>Cortar tudo de uma vez gera ansiedade e desmotivação nas primeiras semanas.</p>
-      </article>
-      <article class="card-flat reveal">
-        <span class="card-icon" aria-hidden="true">⏱</span>
-        <h3>Falta de tempo</h3>
-        <p>Planos complicados não sobrevivem a uma rotina corrida.</p>
-      </article>
-      <article class="card-flat reveal">
-        <span class="card-icon" aria-hidden="true">↻</span>
-        <h3>Efeito sanfona</h3>
-        <p>Resultados rápidos e sem base costumam voltar com a mesma rapidez.</p>
-      </article>
-      <article class="card-flat reveal">
-        <span class="card-icon" aria-hidden="true">?</span>
-        <h3>Informação confusa</h3>
-        <p>Excesso de regras contraditórias torna difícil saber por onde começar.</p>
-      </article>
-    </div>
-  </section>
-
-  <!-- ==========================
-       SOLUÇÃO / BENEFÍCIOS
-  =========================== -->
-  <section class="section section-tint" id="solucao" aria-labelledby="solucao-title">
-    <div class="wrap solucao-grid">
-      <div class="solucao-visual">
-        <img src="assets/images/Leveza Clínica.png" alt="Prévia do guia digital" class="solucao-cover">
-      </div>
-      <div class="solucao-copy">
-        <p class="eyebrow">O que você vai aprender</p>
-        <h2 id="solucao-title">Um método simples para reorganizar sua alimentação</h2>
-
-        <ul class="benefit-list">
-          <li>
-            <span class="benefit-icon" aria-hidden="true">✓</span>
-            <div>
-              <h3>Déficit calórico explicado</h3>
-              <p>Entenda, em termos simples, o que de fato leva à perda de peso.</p>
-            </div>
-          </li>
-          <li>
-            <span class="benefit-icon" aria-hidden="true">✓</span>
-            <div>
-              <h3>Refeições equilibradas</h3>
-              <p>Monte pratos completos sem precisar contar calorias o tempo todo.</p>
-            </div>
-          </li>
-          <li>
-            <span class="benefit-icon" aria-hidden="true">✓</span>
-            <div>
-              <h3>Plano de 30 dias</h3>
-              <p>Uma estrutura dia a dia para colocar a teoria em prática.</p>
-            </div>
-          </li>
-          <li>
-            <span class="benefit-icon" aria-hidden="true">✓</span>
-            <div>
-              <h3>Receitas práticas</h3>
-              <p>Opções rápidas para encaixar em uma rotina real.</p>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==========================
-       CONTEÚDO / CAPÍTULOS
-  =========================== -->
-  <section class="section" id="conteudo" aria-labelledby="conteudo-title">
-    <div class="wrap section-head">
-      <p class="eyebrow">Índice do guia</p>
-      <h2 id="conteudo-title">O que está dentro do e-book</h2>
-    </div>
-
-    <div class="wrap toc">
-      <div class="toc-row reveal">
-        <span class="toc-num">01</span>
-        <div class="toc-text">
-          <h3>Por que as dietas falham</h3>
-          <p>Os erros mais comuns que impedem resultados duradouros.</p>
-        </div>
-      </div>
-      <div class="toc-row reveal">
-        <span class="toc-num">02</span>
-        <div class="toc-text">
-          <h3>Como o emagrecimento funciona</h3>
-          <p>Déficit calórico, proteínas, carboidratos e gorduras, explicados de forma direta.</p>
-        </div>
-      </div>
-      <div class="toc-row reveal">
-        <span class="toc-num">03</span>
-        <div class="toc-text">
-          <h3>Os erros mais comuns</h3>
-          <p>Atitudes que sabotam o progresso sem que você perceba.</p>
-        </div>
-      </div>
-      <div class="toc-row reveal">
-        <span class="toc-num">04</span>
-        <div class="toc-text">
-          <h3>Refeições inteligentes</h3>
-          <p>Como montar pratos equilibrados em todas as refeições do dia.</p>
-        </div>
-      </div>
-      <div class="toc-row reveal">
-        <span class="toc-num">05</span>
-        <div class="toc-text">
-          <h3>Lista de compras</h3>
-          <p>Escolhas melhores no mercado, com menos tempo perdido.</p>
-        </div>
-      </div>
-      <div class="toc-row reveal">
-        <span class="toc-num">06+</span>
-        <div class="toc-text">
-          <h3>Bônus</h3>
-          <p>Plano de 30 dias, receitas, checklists e diário alimentar.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==========================
-       PARA QUEM É
-  =========================== -->
-  <section class="section section-tint" id="publico" aria-labelledby="publico-title">
-    <div class="wrap section-head">
-      <p class="eyebrow">Para quem é</p>
-      <h2 id="publico-title">Este guia é para você que...</h2>
-    </div>
-
-    <div class="wrap grid-3 reveal-group">
-      <article class="card-flat reveal">
-        <p>Já tentou várias dietas e sente que nenhuma se encaixa na sua rotina.</p>
-      </article>
-      <article class="card-flat reveal">
-        <p>Quer entender o motivo por trás das escolhas alimentares, não só seguir regras.</p>
-      </article>
-      <article class="card-flat reveal">
-        <p>Prefere mudanças graduais a promessas de resultado imediato.</p>
-      </article>
-      <article class="card-flat reveal">
-        <p>Tem pouco tempo e precisa de um plano prático, sem complicação.</p>
-      </article>
-      <article class="card-flat reveal">
-        <p>Já passou pelo efeito sanfona e quer construir algo que se mantenha.</p>
-      </article>
-      <article class="card-flat reveal">
-        <p>Busca organização — não uma dieta da moda.</p>
-      </article>
-    </div>
-  </section>
-
-  <!-- ==========================
-       DIFERENCIAIS
-  =========================== -->
-  <section class="section" id="diferenciais" aria-labelledby="diferenciais-title">
-    <div class="wrap section-head">
-      <p class="eyebrow">Por que este guia</p>
-      <h2 id="diferenciais-title">Feito para ser aplicado, não só lido</h2>
-    </div>
-
-    <div class="wrap diff-grid reveal-group">
-      <div class="diff-item reveal"><span aria-hidden="true">✓</span>Linguagem simples e direta</div>
-      <div class="diff-item reveal"><span aria-hidden="true">✓</span>Conteúdo prático, sem enrolação</div>
-      <div class="diff-item reveal"><span aria-hidden="true">✓</span>Aplicação imediata no dia a dia</div>
-      <div class="diff-item reveal"><span aria-hidden="true">✓</span>Leitura rápida</div>
-      <div class="diff-item reveal"><span aria-hidden="true">✓</span>Conteúdo bem organizado</div>
-      <div class="diff-item reveal"><span aria-hidden="true">✓</span>Fácil de entender e seguir</div>
-    </div>
-  </section>
-
-  <!-- ==========================
-       O QUE VOCÊ RECEBE
-  =========================== -->
-  <section class="section section-tint" id="oferta" aria-labelledby="oferta-title">
-    <div class="wrap section-head">
-      <p class="eyebrow">Sua compra inclui</p>
-      <h2 id="oferta-title">Muito mais que um e-book</h2>
-    </div>
-
-    <div class="wrap offer-list">
-      <div class="offer-row reveal">
-        <h3>E-book completo</h3>
-        <p>Guia completo sobre alimentação e formação de hábitos.</p>
-      </div>
-      <div class="offer-row reveal">
-        <h3>Plano alimentar de 30 dias</h3>
-        <p>Estrutura prática para organizar sua rotina.</p>
-      </div>
-      <div class="offer-row reveal">
-        <h3>Receitas saudáveis</h3>
-        <p>Opções rápidas e simples de preparar.</p>
-      </div>
-      <div class="offer-row reveal">
-        <h3>Checklists</h3>
-        <p>Para acompanhar seus hábitos diariamente.</p>
-      </div>
-      <div class="offer-row reveal">
-        <h3>Lista de compras</h3>
-        <p>Para comprar só o necessário.</p>
-      </div>
-      <div class="offer-row reveal">
-        <h3>Diário alimentar</h3>
-        <p>Para registrar e acompanhar sua evolução.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==========================
-       DEPOIMENTOS (honesto)
-  =========================== -->
-  <section class="section" id="depoimentos" aria-labelledby="depoimentos-title">
-    <div class="wrap section-head">
-      <p class="eyebrow">Depoimentos</p>
-      <h2 id="depoimentos-title">Em breve, histórias reais de quem já usou o guia</h2>
-      <p class="section-lead">Como o guia acabou de ser lançado, ainda não há avaliações. Este espaço será atualizado com feedbacks reais assim que os primeiros leitores compartilharem suas experiências.</p>
-    </div>
-
-    <div class="wrap grid-3">
-      <div class="testimonial-placeholder"></div>
-      <div class="testimonial-placeholder"></div>
-      <div class="testimonial-placeholder"></div>
-    </div>
-  </section>
-
-  <!-- ==========================
-       PREÇO / COMPRA
-  =========================== -->
-  <section class="section section-buy" id="comprar" aria-labelledby="comprar-title">
-    <div class="wrap buy-card">
-      <p class="eyebrow eyebrow-inverse">Comece hoje</p>
-      <h2 id="comprar-title">Tenha acesso imediato ao guia completo</h2>
-
-      <div class="buy-price">
-        <span class="price-old">R$ 97,00</span>
-        <span class="price-now">R$ 29,90</span>
-      </div>
-      <p class="buy-note">ou conforme as condições exibidas no checkout</p>
-
-      <a href="COLE_AQUI_O_LINK_DA_KIWIFY" class="btn btn-cta btn-large btn-block">Quero começar agora</a>
-
-      <ul class="buy-trust">
-        <li>Pagamento seguro · Pix, cartão ou boleto</li>
-        <li>Produto 100% digital</li>
-        <li>Acesso após a confirmação do pagamento</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- ==========================
-       GARANTIA
-  =========================== -->
-  <section class="section" id="garantia" aria-labelledby="garantia-title">
-    <div class="wrap garantia-grid">
-      <div class="garantia-icon" aria-hidden="true">✓</div>
+<section id="problema">
+  <div class="wrap">
+    <div class="kicker">O problema</div>
+    <h2 class="sec-title">A maioria não tem problema de renda — tem problema de consciência financeira</h2>
+    <p class="sec-lede">Pequenos gastos invisíveis, compras por impulso e a falta de um plano corroem o orçamento sem que você perceba. Reconhece algum desses sinais?</p>
+    <div class="problem-grid">
       <div>
-        <h2 id="garantia-title">Compra processada com segurança</h2>
-        <p>
-          O pagamento é processado pela Kiwify. Após a confirmação, o material é enviado
-          para o e-mail informado na compra. As condições de reembolso, quando aplicáveis,
-          seguem a política exibida diretamente na página de pagamento.
-        </p>
+        <ul class="alert-list">
+          <li><span class="alert-mark">⚠</span> Acaba o dinheiro antes do fim do mês</li>
+          <li><span class="alert-mark">⚠</span> Não sabe quanto gastou no cartão</li>
+          <li><span class="alert-mark">⚠</span> Usa cheque especial todo mês</li>
+          <li><span class="alert-mark">⚠</span> Compra por impulso e se arrepende depois</li>
+          <li><span class="alert-mark">⚠</span> Não tem reserva para imprevistos</li>
+        </ul>
       </div>
-    </div>
-  </section>
-
-  <!-- ==========================
-       FAQ
-  =========================== -->
-  <section class="section section-tint" id="faq" aria-labelledby="faq-title">
-    <div class="wrap section-head">
-      <p class="eyebrow">Dúvidas frequentes</p>
-      <h2 id="faq-title">Perguntas frequentes</h2>
-    </div>
-
-    <div class="wrap faq-list">
-
-      <div class="faq-item">
-        <button class="faq-question" aria-expanded="true">
-          Como recebo o e-book?
-          <span class="faq-icon" aria-hidden="true">+</span>
-        </button>
-        <div class="faq-answer">
-          <p>Após a confirmação do pagamento, o acesso é enviado para o e-mail informado na compra.</p>
-        </div>
+      <div>
+        <ul class="errors-list">
+          <li><b>Gastar antes de poupar</b> — <span>o que sobra vai para a reserva, e quase nunca sobra nada</span></li>
+          <li><b>Não ter um orçamento</b> — <span>dinheiro sem destino definido vira desperdício</span></li>
+          <li><b>Confundir desejo com necessidade</b> — <span>o impulso do momento consome o futuro</span></li>
+        </ul>
       </div>
-
-      <div class="faq-item">
-        <button class="faq-question" aria-expanded="false">
-          O acesso é imediato?
-          <span class="faq-icon" aria-hidden="true">+</span>
-        </button>
-        <div class="faq-answer">
-          <p>Sim, o material fica disponível assim que o pagamento é confirmado pela plataforma.</p>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-question" aria-expanded="false">
-          Posso acessar pelo celular?
-          <span class="faq-icon" aria-hidden="true">+</span>
-        </button>
-        <div class="faq-answer">
-          <p>Sim. O material pode ser acessado pelo celular, tablet ou computador.</p>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-question" aria-expanded="false">
-          Em qual formato recebo o material?
-          <span class="faq-icon" aria-hidden="true">+</span>
-        </button>
-        <div class="faq-answer">
-          <p>O guia é entregue em formato digital, pronto para leitura em qualquer dispositivo.</p>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-question" aria-expanded="false">
-          Preciso de conhecimento prévio?
-          <span class="faq-icon" aria-hidden="true">+</span>
-        </button>
-        <div class="faq-answer">
-          <p>Não. O conteúdo foi escrito em linguagem simples, sem exigir conhecimento técnico prévio sobre nutrição.</p>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-question" aria-expanded="false">
-          O pagamento é seguro?
-          <span class="faq-icon" aria-hidden="true">+</span>
-        </button>
-        <div class="faq-answer">
-          <p>Sim, o pagamento é processado pela Kiwify, plataforma responsável pela cobrança e emissão de nota.</p>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-question" aria-expanded="false">
-          Como funciona o suporte?
-          <span class="faq-icon" aria-hidden="true">+</span>
-        </button>
-        <div class="faq-answer">
-          <p>Dúvidas sobre acesso ou compra podem ser enviadas por e-mail, informado no rodapé desta página.</p>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-question" aria-expanded="false">
-          O e-book substitui acompanhamento profissional?
-          <span class="faq-icon" aria-hidden="true">+</span>
-        </button>
-        <div class="faq-answer">
-          <p>Não. O conteúdo é educativo e não substitui a avaliação ou o acompanhamento individual de um nutricionista ou médico.</p>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ==========================
-       CTA FINAL
-  =========================== -->
-  <section class="section-final" aria-labelledby="final-title">
-    <div class="wrap">
-      <h2 id="final-title">Comece a organizar sua alimentação hoje</h2>
-      <p>Acesso imediato ao guia completo, com plano, receitas e checklists inclusos.</p>
-      <a href="COLE_AQUI_O_LINK_DA_KIWIFY" class="btn btn-cta btn-large">Quero meu guia</a>
-    </div>
-  </section>
-
-</main>
-
-<!-- ==========================
-     RODAPÉ
-=========================== -->
-<footer class="site-footer">
-  <div class="wrap footer-grid">
-    <div>
-      <p class="footer-brand">Emagreça com Inteligência</p>
-      <p>Guia digital com orientações práticas para organizar a alimentação e construir hábitos saudáveis.</p>
-      <p class="footer-note">Produto digital. Não substitui acompanhamento nutricional ou médico individual.</p>
-    </div>
-    <div>
-      <h3>Links</h3>
-      <ul>
-        <li><a href="#">Política de Privacidade</a></li>
-        <li><a href="#">Termos de Uso</a></li>
-      </ul>
-    </div>
-    <div>
-      <h3>Contato</h3>
-      <p><a href="mailto:Gabrielcalcanho@gmail.com">Gabrielcalcanho@gmail.com</a></p>
     </div>
   </div>
-  <div class="wrap footer-bottom">
-    <p>© 2026 Emagreça com Inteligência. Todos os direitos reservados.</p>
+</section>
+
+<section id="metodo">
+  <div class="wrap">
+    <div class="kicker">O método</div>
+    <h2 class="sec-title">Três movimentos para sair do aperto</h2>
+    <p class="sec-lede">Nada de planilhas complicadas. O guia segue uma lógica simples que você aplica em qualquer fase da vida financeira.</p>
   </div>
+  <div class="wrap">
+    <div class="pillars">
+      <div class="pillar">
+        <div class="pnum mono">01 · Diagnosticar</div>
+        <h3>Entender pra onde seu dinheiro vai</h3>
+        <p>Liste receitas, mapeie despesas e identifique os gastos invisíveis — aqueles de R$9,90 que juntos somam 10% a 20% da sua renda.</p>
+      </div>
+      <div class="pillar">
+        <div class="pnum mono">02 · Organizar</div>
+        <h3>Criar um orçamento que funciona de verdade</h3>
+        <p>O método 50-30-20 aplicado à sua realidade: essenciais, estilo de vida e futuro, com checklist de revisão semanal.</p>
+      </div>
+      <div class="pillar">
+        <div class="pnum mono">03 · Transformar</div>
+        <h3>Construir hábitos que geram liberdade</h3>
+        <p>Regra das 24h, pague-se primeiro, metas claras — pequenas ações diárias que criam uma mudança real e duradoura.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="conteudo">
+  <div class="wrap">
+    <div class="kicker">O que você vai encontrar</div>
+    <h2 class="sec-title">Sumário do guia</h2>
+    <p class="sec-lede">Cada capítulo entrega um exercício prático — nada de teoria solta.</p>
+
+    <div class="toc">
+      <div class="toc-row">
+        <div class="toc-idx mono">01</div>
+        <div><div class="toc-title">Diagnóstico Financeiro</div><div class="toc-desc">Enxergue exatamente onde está o seu dinheiro hoje</div></div>
+        <div class="toc-tag">Exercício</div>
+      </div>
+      <div class="toc-row">
+        <div class="toc-idx mono">02</div>
+        <div><div class="toc-title">Orçamento 50-30-20</div><div class="toc-desc">Um teto de gastos por categoria, com checklist de acompanhamento</div></div>
+        <div class="toc-tag">Método</div>
+      </div>
+      <div class="toc-row">
+        <div class="toc-idx mono">03</div>
+        <div><div class="toc-title">Como sair das dívidas de vez</div><div class="toc-desc">Levantamento, priorização por juros e roteiro de negociação</div></div>
+        <div class="toc-tag">Passo a passo</div>
+      </div>
+      <div class="toc-row">
+        <div class="toc-idx mono">04</div>
+        <div><div class="toc-title">Reserva de emergência</div><div class="toc-desc">Da meta inicial de R$1.000 até 3–6 meses de gastos guardados</div></div>
+        <div class="toc-tag">Planejamento</div>
+      </div>
+      <div class="toc-row">
+        <div class="toc-idx mono">05</div>
+        <div><div class="toc-title">Hábitos que transformam</div><div class="toc-desc">Revisão semanal, regra das 24h, metas claras, pague-se primeiro</div></div>
+        <div class="toc-tag">Rotina</div>
+      </div>
+      <div class="toc-row">
+        <div class="toc-idx mono">06</div>
+        <div><div class="toc-title">Plano de ação em 7 passos</div><div class="toc-desc">Do dia 1 ao hábito contínuo — o roteiro para aplicar ainda hoje</div></div>
+        <div class="toc-tag">Roteiro</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="bonus">
+  <div class="wrap">
+    <div class="bonus-wrap">
+      <div>
+        <div class="bonus-badge">Bônus incluso</div>
+        <h2 class="sec-title" style="margin-bottom:14px;">Planner Financeiro Premium</h2>
+        <p class="sec-lede" style="margin-bottom:0;">Dez ferramentas editáveis para colocar o método em prática — imprima ou preencha direto no computador, mês após mês.</p>
+      </div>
+      <div class="tool-grid">
+        <div class="tool-item"><span class="chk">✓</span> Diagnóstico financeiro completo</div>
+        <div class="tool-item"><span class="chk">✓</span> Controle de receitas</div>
+        <div class="tool-item"><span class="chk">✓</span> Controle de despesas</div>
+        <div class="tool-item"><span class="chk">✓</span> Controle de cartões de crédito</div>
+        <div class="tool-item"><span class="chk">✓</span> Controle de dívidas</div>
+        <div class="tool-item"><span class="chk">✓</span> Planejamento de metas</div>
+        <div class="tool-item"><span class="chk">✓</span> Desafio financeiro de 30 dias</div>
+        <div class="tool-item"><span class="chk">✓</span> Planejamento mensal</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="paraquem">
+  <div class="wrap">
+    <div class="kicker">Este guia é para você?</div>
+    <h2 class="sec-title">Antes de comprar, seja honesto consigo</h2>
+    <div class="who-grid">
+      <div class="who-col yes">
+        <h3>Faz sentido se você</h3>
+        <ul>
+          <li>Quer entender pra onde seu dinheiro realmente vai</li>
+          <li>Está disposto a anotar gastos por alguns dias</li>
+          <li>Prefere um método simples a uma planilha complexa</li>
+          <li>Quer sair do cheque especial ou das dívidas do cartão</li>
+        </ul>
+      </div>
+      <div class="who-col no">
+        <h3>Não é para você se</h3>
+        <ul>
+          <li>Busca uma fórmula de enriquecimento rápido</li>
+          <li>Não está disposto a mudar nenhum hábito de consumo</li>
+          <li>Precisa de orientação sobre investimentos avançados</li>
+          <li>Espera resultado sem aplicar nenhum exercício</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="preco">
+  <div class="wrap">
+    <div class="pricing">
+      <div>
+        <h2>Comece hoje a construir uma vida financeira mais tranquila</h2>
+        <p>Você já deu o passo mais importante: decidir que sua vida financeira vai mudar. Agora falta o método — e ele está aqui.</p>
+      </div>
+      <div class="price-box">
+        <div class="price-was mono">De R$ 97,00</div>
+        <div class="price-now">
+          <span class="cur mono">R$</span>
+          <span class="num">29,90</span>
+          <span class="cur mono">,00</span>
+        </div>
+        <div class="price-inst mono">à vista ou em até 3x no cartão</div>
+        <a href="https://pay.kiwify.com.br/eljR2EL" class="btn-primary">
+          Quero meu exemplar agora
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <div class="price-guarantee">
+          <span>🔒</span>
+          <span>Acesso imediato após a confirmação do pagamento. Garantia de 7 dias — se não fizer sentido pra você, devolvemos o valor.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="kicker">Perguntas frequentes</div>
+    <h2 class="sec-title" style="margin-bottom:8px;">Antes de decidir</h2>
+    <div style="margin-top:40px;">
+      <details class="faq-item">
+        <summary>Preciso saber de finanças ou usar planilhas complicadas?</summary>
+        <p>Não. O guia foi escrito para pessoas reais, com desafios reais — os exercícios usam apenas papel, caneta ou o Planner incluso. Nenhuma fórmula avançada é necessária.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Em quanto tempo vejo resultado?</summary>
+        <p>O plano de ação foi desenhado em etapas diárias e semanais ao longo de 30 dias. O ritmo é seu: o que importa é a consistência, não a velocidade.</p>
+      </details>
+      <details class="faq-item">
+        <summary>O ebook fala sobre investimentos?</summary>
+        <p>O foco é organização financeira, controle de gastos e saída de dívidas — a base antes de investir. Não é um guia de investimentos avançados.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Como recebo o material?</summary>
+        <p>Após a confirmação do pagamento, você recebe o ebook e o Planner Financeiro Premium em formato digital, prontos para ler ou imprimir.</p>
+      </details>
+      <details class="faq-item">
+        <summary>E se eu não gostar?</summary>
+        <p>Você tem 7 dias de garantia a partir da compra. Se sentir que não é para você, é só solicitar o reembolso.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="final" style="border-bottom:none;">
+  <div class="wrap">
+    <div class="kicker" style="justify-content:center; display:flex;">Do aperto ao controle</div>
+    <h2>Cada dia é uma nova oportunidade de dar um passo em direção à sua liberdade financeira.</h2>
+    <p class="hero-sub">R$ 29,90 · acesso imediato · garantia de 7 dias</p>
+    <div class="hero-actions">
+      <a href="https://pay.kiwify.com.br/eljR2EL" class="btn-primary">
+        Quero organizar minhas finanças
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>DO APERTO AO CONTROLE — GUIA DE EDUCAÇÃO FINANCEIRA · MATERIAL DIGITAL</p>
 </footer>
 
-<a href="COLE_AQUI_O_LINK_DA_KIWIFY" class="floating-buy" id="floatingBuy">Comprar agora</a>
+<script src="js/script.js">
+ 
+</script>
 
-<script src="js/script.js"></script>
 </body>
 </html>
