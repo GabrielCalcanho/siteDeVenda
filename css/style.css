@@ -71,6 +71,11 @@
     padding:96px 0 72px;
     border-bottom:1px solid var(--line);
   }
+
+  .favicon{
+    width: 15px;
+   
+  }
   .eyebrow{
     font-family:'IBM Plex Mono',monospace;
     font-size:0.75rem;
