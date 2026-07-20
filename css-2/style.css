@@ -1,6 +1,6 @@
 
-  html{scroll-behavior:smooth;}
-  body{font-family:'Inter',sans-serif;}
+  html{scroll-behavior:smooth; overflow-x:hidden; max-width:100%;}
+  body{font-family:'Inter',sans-serif; overflow-x:hidden; max-width:100%;}
   h1,h2,h3,h4,.font-display{font-family:'Space Grotesk',sans-serif;}
 
   /* ---------- Assinatura visual: linha de razão (ledger rule) ---------- */
